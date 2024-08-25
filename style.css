@@ -1,0 +1,246 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #1F2022;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav button {
+    margin-left: auto;
+    margin-right: 3rem;
+}
+
+
+
+.yhteystiedot {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.yhteystiedot li a {
+    color: white;
+    background-color: #1F2022;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+}
+
+.yhteystiedot li a:hover {
+    background-color: #fdfdfd;
+    color: #000000; /* Change text color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#nav-head {
+    font-family: sans-serif;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+
+.phone-number {
+    margin-left: auto;
+}
+
+/* Main Content (Hero and General Styles) */
+main {
+    text-align: center;
+    padding-top: 6rem;
+    background: #1F2022;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 2rem;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+main img {
+    padding-top: 50px;
+    max-width: 100%;
+}
+
+.ad {
+    background-color: #f00000;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel h1 {
+    flex: 0 0 100%;
+    margin: 0;
+    color: white;
+    text-align: center;
+    background-color: #f00000;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .carousel h1 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel h1 {
+        font-size: 1.2rem; /* Further adjust font size for very small screens */
+        padding: 0.3rem;
+    }
+}
+
+
+button {
+    background-color: #f00000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 20px;;
+    margin-top: 20px;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+/* Section Styling */
+section {
+    padding: 1.5rem 1rem;
+    margin: 1rem 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #f00000;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f00000;
+    padding-bottom: 0.5rem;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+section p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+/* List Styles */
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li::before {
+    content: "•";
+    color: #0077cc;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        margin: 1rem;
+    }
+
+    main h1 {
+        font-size: 2rem;
+        }
+
+        main p {
+        font-size: 1rem;
+        }
+    }
+
+    .car-images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centers images horizontally */
+    }
+    
+    .car-images img {
+        max-width: 100%;
+        height: auto;
+        margin: 0.5rem; /* Adds space between images */
+    }
+    
+    @media (max-width: 480px) {
+        main h1 {
+            font-size: 1.5rem;
+        }
+    
+        main p {
+            font-size: 0.8rem;
+        }
+    
+        .car-images {
+            max-width: 100%; /* Ensures the container is full width on small screens */
+            padding: 0 1rem; /* Adds some padding on the sides */
+        }
+    
+        .car-images img {
+            max-width: 90%; /* Adjust image size to fit within smaller screens */
+            margin: 0.5rem auto; /* Centers the images and adds vertical spacing */
+        }
+    }
+    
